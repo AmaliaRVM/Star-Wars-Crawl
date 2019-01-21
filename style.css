@@ -8,6 +8,33 @@ body {
     background-image: url(images/star.jpg)
 }
 
+.becode {
+    position: relative;
+    top: 500px; 
+    margin: auto;
+    width: 300px;
+    transform-origin: 50% 100%;
+    animation: becode 10s linear;
+    animation-delay: 2s;
+}
+img{
+    width: 100%;
+    display: block;
+}
+
+}
+
+@keyframes becode {
+    0% {
+        top: 0;
+        opacity: 1;
+    }
+    100% {
+        top: -400px;
+       
+    }
+}
+
 .star-wars {
     display: flex;
     justify-content: center;
@@ -24,8 +51,9 @@ body {
 
 .crawl {
     position: relative;
-    top: -100%;
+    top: -500%;
     transform-origin: 50% 100%;
+   
 }
 
 @keyframes crawl {
@@ -43,4 +71,5 @@ body {
     position: relative;
     transform-origin: 50% 100%;
     animation: crawl 60s linear;
+    animation-delay: 10s;
 }
